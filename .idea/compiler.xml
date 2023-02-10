@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="PubSubToCloudStorageBeamStream" />
+        <module name="PubSubToFirestoreBeamStream" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="PubSubToCloudStorageBeamStream" target="1.8" />
+      <module name="PubSubToFirestoreBeamStream" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

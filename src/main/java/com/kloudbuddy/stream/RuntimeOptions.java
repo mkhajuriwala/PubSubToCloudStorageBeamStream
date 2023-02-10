@@ -9,10 +9,10 @@ import org.apache.beam.sdk.options.Validation;
 
 public interface RuntimeOptions extends PipelineOptions, StreamingOptions {
 
-    @Description("The Cloud Pub/Sub topic to read from.")
+    @Description("The Cloud Pub/Sub topic subscription to read from.")
     @Validation.Required
-    String getInputTopic();
-    void setInputTopic(String value);
+    String getInputTopicSubscription();
+    void setInputTopicSubscription(String value);
     @Description("Output file's window size in number of minutes.")
     @Default.Integer(1)
     Integer getWindowSize();

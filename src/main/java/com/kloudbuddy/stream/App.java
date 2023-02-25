@@ -33,6 +33,6 @@ public class App {
                 // 2.2.2) Write one file to GCS for every window of messages.
                 .apply("Write Files to GCS", new WriteOneFilePerWindow(options.getOutput(), numShards));
         // Execute the pipeline and wait until it finishes running.
-        pipeline.run().waitUntilFinish();
+        pipeline.run();
     }
 }
